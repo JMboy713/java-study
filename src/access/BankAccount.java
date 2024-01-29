@@ -7,6 +7,7 @@ public class BankAccount {
 		balance=0;
 	}
 
+
 	public void deposit(int amount){// 	입금
 		if (isAmountValid(amount)) {
 			balance+=amount;
@@ -16,7 +17,7 @@ public class BankAccount {
 	}
 }
 	public void withdraw(int amount){
-		if(isAmountValid(amount)&&balance-amount>=0){
+		if(isAmountValid(amount)&&balance-amount>=0){ // and 조건
 				balance-=amount;
 				System.out.println("출금 완료. 잔액: "+balance);
 			}else{
@@ -27,7 +28,7 @@ public class BankAccount {
 	public int getBalance(){
 		return balance;
 	}
-	
+
 	private boolean isAmountValid(int amount){
 		return amount>0;
 	}
