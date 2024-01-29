@@ -1,5 +1,6 @@
 package static1;
 
+import static static2.DecoData.*;
 public class DataCountMain3 {
 
   public static void main(String[] args) {
@@ -16,5 +17,7 @@ public class DataCountMain3 {
 	System.out.println(Data3.count); // 비추 -> 인스턴스 변수에 접근하는 것처럼 보일 수 있기 때문에 오해를 불러일으키기 쉽다.
 
 	System.out.println(Data3.count);
+  staticCall();
+
   }
 }
