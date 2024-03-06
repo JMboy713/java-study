@@ -11,6 +11,15 @@ public class _05_Synchronization {
                 System.out.println("직원1 청소 시작");
                 for (int i = 1; i <= 5; i++) {
                     room.clean("직원1");
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                    if (i == 2) {
+                        throw new RuntimeException("힘들다");
+                    }
+
                 }
                 System.out.println("-- 직원1 청소 끝 --");
             }
@@ -20,6 +29,12 @@ public class _05_Synchronization {
             System.out.println("직원2 청소 시작");
             for (int i = 1; i <= 5; i++) {
                 room.clean("직원2");
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
+
             }
             System.out.println("-- 직원2 청소 끝 --");
         }; // 객체 생성
