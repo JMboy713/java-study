@@ -6,5 +6,6 @@ public class StringComparisonMain {
         String str2 = "hello, java";
         System.out.println(str1.compareTo(str2)); // -> 칸 차이를 알려줌.
         System.out.println("'a' compareTO'b' : " + "a".compareTo("b"));
+        str2.join(" ", "Hello", "Java");
     }
 }
