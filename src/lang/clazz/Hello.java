@@ -1,2 +1,7 @@
-package lang.clazz;public class Hello {
+package lang.clazz;
+
+public class Hello {
+    public String hello(){
+        return "Hello";
+    }
 }
