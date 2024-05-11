@@ -1,6 +1,9 @@
 public class HelloJava {
 
   public static void main(String[] args) {
-    System.out.println("hello java");
+
+    String name = "Java";
+    name.replace("J", "H");
+    System.out.println(name);
   }
 }
