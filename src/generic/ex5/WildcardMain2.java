@@ -22,6 +22,7 @@ public class WildcardMain2 {
     }
 
     static void writeBox(Box<? super Animal> box) {
+
         box.set(new Dog("멍멍이", 100));
     }
 }
