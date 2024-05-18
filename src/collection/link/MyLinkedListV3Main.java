@@ -1,8 +1,8 @@
 package collection.link;
 
-public class MyLinkedListV2Main {
+public class MyLinkedListV3Main {
     public static void main(String[] args) {
-        MyLinkedListV2 list = new MyLinkedListV2();
+        MyLinkedListV3<String> list = new MyLinkedListV3<>();
         System.out.println("데이터 추가");
         list.add("a");
         list.add("b");
@@ -11,18 +11,13 @@ public class MyLinkedListV2Main {
 
         System.out.println(list.size());
         System.out.println(list.get(1));
-        System.out.println(list.indexOf("c"));
-        System.out.println(list.set(2,"d"));
-        System.out.println(list);
-        //첫 번째 항목에 추가, 삭제 System.out.println("첫 번째 항목에 추가"); list.add(0,"d"); //O(1) System.out.println(list);
-        System.out.println("첫 번째 항목 삭제"); list.remove(0); //remove First O(1)
-         System.out.println(list);
-        //중간 항목에 추가, 삭제
-         System.out.println("중간 항목에 추가");
-        list.add(1,"e"); //O(n)
-         System.out.println(list);
-        System.out.println("중간 항목 삭제");
-        list.remove(1);//remove O(n)
-         System.out.println(list);
+
+
+        MyLinkedListV3<Integer> listV3 = new MyLinkedListV3<>();
+        listV3.add(1);
+        listV3.add(2);
+        listV3.add(3);
+        Integer i = listV3.get(0);
+        System.out.println(i);
     }
 }
