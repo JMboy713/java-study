@@ -1,5 +1,6 @@
 package collection.set.test;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -15,6 +16,7 @@ public class RectangleTest {
         for (Rectangle rectangle : rectangleSet) {
             System.out.println("rectangle = " + rectangle);
         }
+
 
 
     }
